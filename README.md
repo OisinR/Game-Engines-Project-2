@@ -6,4 +6,4 @@ https://www.youtube.com/watch?v=HlLS5w_DQGc&t=1m19s
 
 Storyboards 
 
-![](/GE2 Assignment/1.png)
+![Story1](/GE2 Assignment/1.png)
