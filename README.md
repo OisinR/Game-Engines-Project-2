@@ -36,7 +36,7 @@ Shot of friendly ship, the Destiny Ascension getting hit with enemy fire
 Scene 6
 ![Scene6](https://github.com/OisinR/Game-Engines-Project-2/blob/master/GE2Assignment/6.png)
 
-Cut back to Alliance fleet, the open fire past the camera
+Cut back to Alliance fleet, they open fire past the camera
 
 Scene 7
 ![Scene7](https://github.com/OisinR/Game-Engines-Project-2/blob/master/GE2Assignment/7.png)
