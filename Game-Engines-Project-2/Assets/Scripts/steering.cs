@@ -165,7 +165,7 @@ public class steering : MonoBehaviour
         return force;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (targetTransform != null)
@@ -182,7 +182,7 @@ public class steering : MonoBehaviour
         {
             Vector3 tempUp = Vector3.Lerp(transform.up, Vector3.up + (acceleration * banking), Time.deltaTime * 3.0f);
             transform.LookAt(transform.position + velocity, tempUp);
-            //transform.forward = velocity;
+
             velocity -= (damping * velocity * Time.deltaTime);
 
 

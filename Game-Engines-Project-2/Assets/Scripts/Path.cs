@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Path : MonoBehaviour
 {
-    public List<Vector3> waypoints = new List<Vector3>();
+    public List<GameObject> waypoints = new List<GameObject>();
     public int next = 0;
     public bool looped = true;
 
@@ -16,19 +16,19 @@ public class Path : MonoBehaviour
         {
             int prev = i - 1;
             int next = i % waypoints.Count;
-            Gizmos.DrawSphere(waypoints[prev], 1f);
-            Gizmos.DrawLine(waypoints[prev], waypoints[next]);
+            Gizmos.DrawSphere(waypoints[prev].transform.position, 1f);
+            Gizmos.DrawLine(waypoints[prev].transform.position, waypoints[next].transform.position);
         }
         if (!looped)
         {
-            Gizmos.DrawSphere(waypoints[waypoints.Count - 1], 1f);
+            Gizmos.DrawSphere(waypoints[waypoints.Count - 1].transform.position, 1f);
         }
     }
 
 
     public Vector3 NextWaypoint()
     {
-        return waypoints[next];
+        return waypoints[next].transform.position;
     }
 
     public void AdvanceToNext()
