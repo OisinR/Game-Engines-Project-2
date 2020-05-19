@@ -4,31 +4,45 @@ using UnityEngine;
 
 public class Path : MonoBehaviour
 {
-    public List<GameObject> waypoints = new List<GameObject>();
+    public List<Vector3> waypoints = new List<Vector3>();
+
     public int next = 0;
     public bool looped = true;
 
     public void OnDrawGizmos()
     {
+        int count = looped ? (transform.childCount + 1) : transform.childCount;
         Gizmos.color = Color.cyan;
-        int count = (looped) ? waypoints.Count + 1 : waypoints.Count;
         for (int i = 1; i < count; i++)
         {
-            int prev = i - 1;
-            int next = i % waypoints.Count;
-            Gizmos.DrawSphere(waypoints[prev].transform.position, 1f);
-            Gizmos.DrawLine(waypoints[prev].transform.position, waypoints[next].transform.position);
-        }
-        if (!looped)
-        {
-            Gizmos.DrawSphere(waypoints[waypoints.Count - 1].transform.position, 1f);
+            Transform prev = transform.GetChild(i - 1);
+            Transform next = transform.GetChild(i % transform.childCount);
+            Gizmos.DrawLine(prev.transform.position, next.transform.position);
+            Gizmos.DrawSphere(prev.position, 1);
+            Gizmos.DrawSphere(next.position, 1);
         }
     }
 
+    // Use this for initialization
+    void Start()
+    {
+        waypoints.Clear();
+        int count = transform.childCount;
+        for (int i = 0; i < count; i++)
+        {
+            waypoints.Add(transform.GetChild(i).position);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     public Vector3 NextWaypoint()
     {
-        return waypoints[next].transform.position;
+        return waypoints[next];
     }
 
     public void AdvanceToNext()
@@ -39,7 +53,7 @@ public class Path : MonoBehaviour
         }
         else
         {
-            if (!IsLast())
+            if (next != waypoints.Count - 1)
             {
                 next++;
             }
@@ -48,18 +62,11 @@ public class Path : MonoBehaviour
 
     public bool IsLast()
     {
-        return (next == waypoints.Count - 1);
+        return next == waypoints.Count - 1;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
+
 }
