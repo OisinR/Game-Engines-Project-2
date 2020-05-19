@@ -6,6 +6,8 @@ public class Pursue : SteeringBehaviour
 {
     public Boid[] target;
 
+    public GameObject carrot;
+
     Vector3 targetPos;
 
     public int targetno;
@@ -34,12 +36,19 @@ public class Pursue : SteeringBehaviour
     public override Vector3 Calculate()
     {
 
+        if(target[targetno])
+        {
+            float dist = Vector3.Distance(target[targetno].transform.position, transform.position);
+            float time = dist / boid.maxSpeed;
 
-        float dist = Vector3.Distance(target[targetno].transform.position, transform.position);
-        float time = dist / boid.maxSpeed;
+            targetPos = target[targetno].transform.position + (target[targetno].velocity * time);
+            return boid.SeekForce(targetPos);
+        }
+        else
+        {
+            return boid.SeekForce(carrot.transform.position);
+        }
 
-        targetPos = target[targetno].transform.position + (target[targetno].velocity * time);
-
-        return boid.SeekForce(targetPos);
+        
     }
 }

@@ -25,7 +25,12 @@ public class FleeWhenClose : MonoBehaviour
 
 	private void Update()
     {
-        Debug.Log(Vector3.Distance(transform.position, target.transform.position));
+        //Debug.Log(Vector3.Distance(transform.position, target.transform.position));
+
+        if(target == null)
+        {
+            return;
+        }
 
         if(Vector3.Distance(transform.position, target.transform.position) < min)
         {
