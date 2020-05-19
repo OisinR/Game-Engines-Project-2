@@ -24,11 +24,15 @@ public class FollowPath : SteeringBehaviour
 
     }
 
+    float skipTime;
+
     public override Vector3 Calculate()
     {
+        
         nextWaypoint = path.NextWaypoint();
-        if (Vector3.Distance(transform.position, nextWaypoint) < 3)
+        if (Vector3.Distance(transform.position, nextWaypoint) < 6 || Time.time > skipTime + 5)
         {
+            skipTime = Time.time;
             path.AdvanceToNext();
         }
 

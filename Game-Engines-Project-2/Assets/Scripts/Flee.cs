@@ -31,7 +31,7 @@ public class Flee : SteeringBehaviour
 
     public override Vector3 Calculate()
     {
-        return -boid.SeekForce(target) * 2f ;
+        return -boid.SeekForce(target) * 1.5f ;
     }
 
     public void Update()
