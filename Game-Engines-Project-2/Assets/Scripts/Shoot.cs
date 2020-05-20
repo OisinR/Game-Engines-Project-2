@@ -13,9 +13,14 @@ public class Shoot : MonoBehaviour
     public float cooldown = 0.2f;
     float lastTimeFired;
 
+    AudioSource speaker;
+
+    public AudioClip laser;
+
     void Start()
     {
         lastTimeFired = Time.time;
+        speaker = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -34,6 +39,7 @@ public class Shoot : MonoBehaviour
     {
         GameObject bullet = Instantiate(projectile, shootPoint.transform.position, Quaternion.identity) as GameObject;
         bullet.GetComponent<Rigidbody>().AddForce(shootPoint.transform.forward * 3000);
+        speaker.PlayOneShot(laser);
     }
 }
 

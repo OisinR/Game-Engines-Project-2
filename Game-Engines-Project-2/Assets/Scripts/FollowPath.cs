@@ -19,11 +19,6 @@ public class FollowPath : SteeringBehaviour
         }
     }
 
-    public void Start()
-    {
-
-    }
-
     float skipTime;
 
     public override Vector3 Calculate()

@@ -5,15 +5,6 @@ using UnityEngine;
 public class CameraMove2 : MonoBehaviour
 {
 
-    public GameObject cameraGO;
-
-	void Start()
-    {
-        
-    }
-
-
-
 
 	private void FixedUpdate()
     {

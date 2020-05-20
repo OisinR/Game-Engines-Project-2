@@ -7,14 +7,6 @@ public class GethLookAt : MonoBehaviour
 
     public Transform target;
 
-   //zxzczxc
-	void Start()
-    {
-        
-    }
-
-
-
 
 	private void Update()
     {

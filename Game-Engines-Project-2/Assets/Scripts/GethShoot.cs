@@ -15,13 +15,4 @@ public class GethShoot : MonoBehaviour
     }
 
 
-
-
-	private void Update()
-    {
-        
-    }
-
-
-
 }

@@ -9,7 +9,7 @@ public class Manager2 : MonoBehaviour
     public float waitTime;
     public int sceneNo;
 
-   //zxzczxc
+
 	void Start()
     {
         Invoke("ChangeScene", waitTime);

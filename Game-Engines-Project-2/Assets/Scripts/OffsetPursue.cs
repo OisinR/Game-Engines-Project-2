@@ -10,7 +10,6 @@ public class OffsetPursue : SteeringBehaviour
 
     Vector3 offset;
 
-    // Start is called before the first frame update
     void Start()
     {
         offset = transform.position - leader.transform.position;

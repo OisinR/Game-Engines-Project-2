@@ -39,7 +39,7 @@ public class Health : MonoBehaviour
             }
             else
             {
-                
+                Manager3.goNow = true;
                 Destroy(parent);
             }
             
