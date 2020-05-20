@@ -47,3 +47,30 @@ Scene 8
 ![Scene8](https://github.com/OisinR/Game-Engines-Project-2/blob/master/GE2Assignment/8.png)
 
 Day is saved, Destiny Ascension is safe and enemy is destroyed
+
+
+Links to assets used:
+
+https://www.thingiverse.com/thing:1978056
+
+https://free3d.com/3d-model/ssv-normandy-sr1-mass-effect-92431.html
+
+https://free3d.com/3d-model/human-fighter-sx1-mass-effect-92178.html
+
+https://www.thingiverse.com/thing:702830
+
+https://www.thingiverse.com/thing:3462541
+
+http://www.mediafire.com/file/x6sua6mjyd41yu4/GethDreadOBJ.rar/file
+
+https://www.thingiverse.com/thing:2196446
+
+https://sketchfab.com/alinebslv/collections/mass-effect
+
+https://www.thingiverse.com/thing:69086
+
+http://www.mediafire.com/file/9y9hoy0jz57d0yv/Normandy2OBJ.rar/file
+
+https://opengameart.org/content/63-digital-sound-effects-lasers-phasers-space-etc
+
+https://anttimartikainen.bandcamp.com/album/the-last-chronicle
