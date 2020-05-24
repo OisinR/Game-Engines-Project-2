@@ -66,6 +66,22 @@ What I am most proud of in the assignment:
 The first scene looks quite close to the original and I really like the "warping in" effects.
 
 
+Scripts:
+
+From class:
+SteeringBehaviour
+Pursue
+Path
+OffsetPursue
+ObstacleAvoidance
+FollowPath
+Flee
+Boid
+Arrive
+
+All others are from me
+
+
 Links to assets used:
 
 https://www.thingiverse.com/thing:1978056
