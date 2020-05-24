@@ -1,6 +1,6 @@
 # Game Engines Project 2
 
-Description:
+## Description:
 
 Sci Fi battle between humans and aliens as seen in Mass Effect. 
 
@@ -52,37 +52,37 @@ Day is saved, Destiny Ascension is safe and enemy is destroyed
 
 
 
-Instructions:
+## Instructions:
 
 Just start it up, it runs by itself.
 
 
-How it works:
+## How it works:
 
 Setup scenes work by using arrive behaviours, main battle works by having a combination of pursue, path following and flee behaviours as well as obstacle avoidance. Ships will pursue the main enemy, shooting at them when they're in front of them. When they get too close, they then turn to flee so they can line themselves up for another bombing run. The path around the enemy encourages ships to move around the enemy, rather than just fly towards and away from them in the same spot. When the first enemy has taken enough damage, the second enemy is destroyed and the first enemy is moved to the second enemy's position. Its health is reset and all ships go and take it out again. The reason I did it this way is so I don't have to re-setup all the steering behaviours on the second ship, they all just persist from the first time.
 
-What I am most proud of in the assignment:
+## What I am most proud of in the assignment:
 
 The first scene looks quite close to the original and I really like the "warping in" effects.
 
 
-Scripts:
+## Scripts:
 
 From class:
-SteeringBehaviour
-Pursue
-Path
-OffsetPursue
-ObstacleAvoidance
-FollowPath
-Flee
-Boid
+SteeringBehaviour,
+Pursue,
+Path,
+OffsetPursue,
+ObstacleAvoidance,
+FollowPath,
+Flee,
+Boid,
 Arrive
 
 All others are from me
 
 
-Links to assets used:
+## Links to assets used:
 
 https://www.thingiverse.com/thing:1978056
 
